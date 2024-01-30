@@ -19,8 +19,11 @@ function LoginDesktop() {
         </p>
       </div>
       <Button size="24rem" name="Logar" />
-      <p className="mt-4 text-white text-md hover:text-cyan-300 hover:cursor-pointer">
-        Esqueceu sua senha?
+      <p className="mt-8 hover:cursor-default">
+        Não possui uma conta?{" "}
+        <a href="/register" className="hover:text-cyan-300">
+          Registre-se!
+        </a>
       </p>
     </div>
   );
