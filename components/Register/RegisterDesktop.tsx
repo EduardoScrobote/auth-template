@@ -18,9 +18,9 @@ function Desktop() {
           <div className="flex flex-col border-b border-white justify-center items-center mt-4">
             <Button size="24rem" name="Registrar" />
             <p className="mt-8 mb-4 hover:cursor-default">
-              Não possui uma conta?{" "}
-              <a href="/register" className="hover:text-cyan-300">
-                Registre-se!
+              Já possui uma conta?{" "}
+              <a href="/" className="hover:text-cyan-300">
+                Faça login!
               </a>
             </p>
           </div>
