@@ -6,21 +6,21 @@ import Button from "../Button/Button";
 import { IoLogoGoogleplus } from "react-icons/io";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 
-function Desktop() {
-  if ([BreakPoint.DESKTOP].includes(useBreakPoint())) {
+function RegisterMobile() {
+  if ([BreakPoint.MOBILE, BreakPoint.TABLET].includes(useBreakPoint())) {
     return (
       <div className="w-full h-screen flex justify-center items-center bg-purple">
-        <div className="w-[40%] h-[50rem] flex justify-center flex-col items-center bg-purple-800 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-white border-2 border-white">
+        <div className="w-full h-screen flex justify-center flex-col items-center">
           <h1 className="mb-16 text-white text-4xl font-bold">Registre-se</h1>
-          <Input size="24rem" name="Usuario" />
-          <Input size="24rem" name="E-mail" />
-          <Input size="24rem" name="Senha" />
-          <div className="flex flex-col border-b border-white justify-center items-center mt-4">
-            <Button size="24rem" name="Registrar" />
-            <p className="mt-8 mb-4 hover:cursor-default">
-              Não possui uma conta?{" "}
-              <a href="/register" className="hover:text-cyan-300">
-                Registre-se!
+          <Input size="14rem" name="Usuario" />
+          <Input size="14rem" name="E-mail" />
+          <Input size="14rem" name="Senha" />
+          <div className="mt-4 w-[16rem] border-b border-white flex justify-center flex-col items-center">
+            <Button size="14rem" name="Registrar" />
+            <p className="mt-4 text-white mb-8 text-sm hover:cursor-pointer">
+              Já possui uma conta?{" "}
+              <a href="/" className="hover:text-cyan-300">
+                faça login!
               </a>
             </p>
           </div>
@@ -35,7 +35,7 @@ function Desktop() {
               color="#0866ff"
               style={{ cursor: "pointer", marginRight: "16px" }}
             />
-            <FaGithub size={36} color="#152d3c" style={{ cursor: "pointer" }} />
+            <FaGithub size={36} color="black" style={{ cursor: "pointer" }} />
           </div>
         </div>
       </div>
@@ -43,4 +43,4 @@ function Desktop() {
   }
 }
 
-export default Desktop;
+export default RegisterMobile;
