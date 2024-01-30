@@ -1,6 +1,8 @@
 import React from "react";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
+import { IoLogoGoogleplus } from "react-icons/io";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 
 function Mobile() {
   return (
@@ -18,10 +20,25 @@ function Mobile() {
           Esqueceu sua senha?
         </p>
       </div>
-      <Button size="14rem" name="Logar" />
-      <p className="mt-4 text-white text-sm hover:text-cyan-300 hover:cursor-pointer">
-        Esqueceu sua senha?
-      </p>
+      <div className="flex justify-center items-center flex-col border-b border-white">
+        <Button size="14rem" name="Logar" />
+        <p className="mt-4 mb-8 text-white text-sm hover:text-cyan-300 hover:cursor-pointer">
+          Esqueceu sua senha?
+        </p>
+      </div>
+      <div className="flex mt-4 justify-center items-center">
+        <IoLogoGoogleplus
+          size={42}
+          color="#e54533"
+          style={{ cursor: "pointer", marginRight: "16px" }}
+        />
+        <FaFacebook
+          size={36}
+          color="#0866ff"
+          style={{ cursor: "pointer", marginRight: "16px" }}
+        />
+        <FaGithub size={36} color="black" style={{ cursor: "pointer" }} />
+      </div>
     </div>
   );
 }

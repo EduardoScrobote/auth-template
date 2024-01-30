@@ -1,6 +1,8 @@
 import React from "react";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
+import { IoLogoGoogleplus } from "react-icons/io";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 
 function LoginDesktop() {
   return (
@@ -18,13 +20,33 @@ function LoginDesktop() {
           Esqueceu sua senha?
         </p>
       </div>
-      <Button size="24rem" name="Logar" />
-      <p className="mt-8 hover:cursor-default">
-        Não possui uma conta?{" "}
-        <a href="/register" className="hover:text-cyan-300">
-          Registre-se!
-        </a>
-      </p>
+      <div className="flex flex-col justify-center items-center border-b border-white">
+        <Button size="24rem" name="Logar" />
+        <p className="mt-8 mb-8 hover:cursor-default">
+          Não possui uma conta?{" "}
+          <a href="/register" className="hover:text-cyan-300">
+            Registre-se!
+          </a>
+        </p>
+      </div>
+      <div className="flex mt-4 justify-center items-center">
+        <IoLogoGoogleplus
+          size={42}
+          color="#e54533"
+          style={{ cursor: "pointer", marginRight: "16px" }}
+        />
+        <FaFacebook
+          size={36}
+          color="#0866ff"
+          style={{ cursor: "pointer", marginRight: "16px" }}
+        />
+        <FaGithub
+          onClick={() => window.open("https://github.com/EduardoScrobote")}
+          size={36}
+          color="black"
+          style={{ cursor: "pointer" }}
+        />
+      </div>
     </div>
   );
 }
