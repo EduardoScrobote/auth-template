@@ -9,8 +9,8 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 function Desktop() {
   if ([BreakPoint.DESKTOP].includes(useBreakPoint())) {
     return (
-      <div className="w-full h-screen flex justify-center items-center bg-purple">
-        <div className="w-[40%] h-[50rem] flex justify-center flex-col items-center bg-purple-800 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-white border-2 border-white">
+      <div className="w-full bg-red-300 h-screen flex justify-center items-center bg-purple">
+        <div className="w-[40%] h-[50rem] flex justify-center flex-col items-center bg-purple-800 rounded-3xl backdrop-filter backdrop-blur-sm bg-opacity-20 text-white border-2 border-white">
           <h1 className="mb-16 text-white text-4xl font-bold">Registre-se</h1>
           <Input size="24rem" name="Usuario" />
           <Input size="24rem" name="E-mail" />

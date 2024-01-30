@@ -10,18 +10,15 @@ function LoginDesktop() {
       <h1 className="mb-16 text-white text-4xl font-bold">Login</h1>
       <Input size="24rem" name="Usuario" />
       <Input size="24rem" name="Senha" />
-
-      <div className="flex flex-row gap-24 mt-2">
-        <div className="flex">
-          <input type="checkbox" className="mr-1" />
-          <p className="text-white text-md">Salvar senha?</p>
-        </div>
-        <p className="text-white text-md hover:cursor-pointer hover:text-cyan-300">
-          Esqueceu sua senha?
-        </p>
+      <div className="flex w-full justify-center mt-4 mr-28">
+        <input type="checkbox" className="mr-1" />
+        <p className="text-white text-md">Salvar senha?</p>
       </div>
       <div className="flex flex-col justify-center items-center border-b border-white">
         <Button size="16rem" name="Logar" />
+        <p className="text-white text-md hover:cursor-pointer mt-4 hover:text-cyan-300">
+          Esqueceu sua senha?
+        </p>
         <p className="mt-8 mb-8 hover:cursor-default">
           Não possui uma conta?{" "}
           <a href="/register" className="hover:text-cyan-300">

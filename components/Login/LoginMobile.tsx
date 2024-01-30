@@ -11,7 +11,7 @@ function Mobile() {
       <Input size="14rem" name="Usuario" />
       <Input size="14rem" name="Senha" />
 
-      <div className="flex flex-row gap-4 mt-2">
+      <div className="flex flex-row gap-2 mt-2">
         <div className="flex">
           <input type="checkbox" className="mr-1" />
           <p className="text-white text-sm">Salvar senha?</p>

@@ -10,7 +10,7 @@ function RegisterMobile() {
   if ([BreakPoint.MOBILE, BreakPoint.TABLET].includes(useBreakPoint())) {
     return (
       <div className="w-full h-screen flex justify-center items-center bg-purple">
-        <div className="w-full h-screen flex justify-center flex-col items-center">
+        <div className="w-full  h-screen flex justify-center flex-col items-center">
           <h1 className="mb-16 text-white text-4xl font-bold">Registre-se</h1>
           <Input size="14rem" name="Usuario" />
           <Input size="14rem" name="E-mail" />
