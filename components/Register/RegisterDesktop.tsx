@@ -16,7 +16,7 @@ function Desktop() {
           <Input size="24rem" name="E-mail" />
           <Input size="24rem" name="Senha" />
           <div className="flex flex-col border-b border-white justify-center items-center mt-4">
-            <Button size="24rem" name="Registrar" />
+            <Button size="16rem" name="Registrar" />
             <p className="mt-8 mb-4 hover:cursor-default">
               Já possui uma conta?{" "}
               <a href="/" className="hover:text-cyan-300">

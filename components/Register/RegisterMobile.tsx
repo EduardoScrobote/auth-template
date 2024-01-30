@@ -16,7 +16,7 @@ function RegisterMobile() {
           <Input size="14rem" name="E-mail" />
           <Input size="14rem" name="Senha" />
           <div className="mt-4 w-[16rem] border-b border-white flex justify-center flex-col items-center">
-            <Button size="14rem" name="Registrar" />
+            <Button size="16rem" name="Registrar" />
             <p className="mt-4 text-white mb-8 text-sm hover:cursor-pointer">
               Já possui uma conta?{" "}
               <a href="/" className="hover:text-cyan-300">

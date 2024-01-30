@@ -21,7 +21,7 @@ function Mobile() {
         </p>
       </div>
       <div className="flex justify-center items-center flex-col border-b border-white">
-        <Button size="14rem" name="Logar" />
+        <Button size="16rem" name="Logar" />
         <p className="mt-8 mb-8 text-white text-sm hover:cursor-default">
           Não possui uma conta?{" "}
           <a href="/register" className="hover:text-cyan-300">
